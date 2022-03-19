@@ -1,7 +1,7 @@
 #Exercicio 2
-install.packages("tidyverse")
-install.packages("ggQC")
-install.packages("bbl")
+#install.packages("tidyverse")
+#install.packages("ggQC")
+#install.packages("bbl")
 
 library("ggQC")
 library("tidyverse")
@@ -23,3 +23,4 @@ ggplot(data = TabelaFrequencias) +
 geom_histogram(aes(x = `Faixa Salarial`), stat="count") +
   ggtitle(paste("Histograma da Frequência de salários")) +
   theme(plot.title = element_text(hjust = 0.5))
+

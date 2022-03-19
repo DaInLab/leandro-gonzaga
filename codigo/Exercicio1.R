@@ -1,11 +1,9 @@
 #Exercicio 1
-install.packages("tidyverse")
+#install.packages("tidyverse")
 
 library("tidyverse")
 
 library(readxl)
-
-
 
 dataset_inicial  <- read_excel("dados/exercicio1.xls")
 
@@ -21,6 +19,7 @@ descritivas_dataset <- summarise(dataset_inicial,
                                    quartil_1=quantile(taxa, type=5, 0.25),
                                    quartil_3=quantile(taxa, type=5, 0.75))
 
+library(ggplot2)
 dataset_inicial %>% ggplot( geom_bar(aes(x=taxa)))
                             #geom_line(aes(x= descritivas_dataset$média))))
 

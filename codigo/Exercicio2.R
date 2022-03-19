@@ -1,6 +1,6 @@
 #Exercicio 2
-install.packages("tidyverse")
-install.packages("bpgmm")
+#install.packages("tidyverse")
+#install.packages("bpgmm")
 
 library("tidyverse")
 library("bpgmm")
@@ -33,7 +33,7 @@ dataset_inicial <- dataset_inicial  %>% mutate(dataset_inicial,
                                                observacoes = c(1:descritivas_dataset$observacoes))
 
 #Plotagem dos gráficos
-
+library(ggplot2)
 ggplot(data = dataset_inicial) +
   geom_col(aes(y = Casas, x = observacoes)) +
   geom_line(aes(x = observacoes, y = descritivas_dataset$media), colour="red")+

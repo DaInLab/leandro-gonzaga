@@ -1,7 +1,7 @@
 #Exercicio 2
-install.packages("tidyverse")
-install.packages("ggQC")
-install.packages("bbl")
+#install.packages("tidyverse")
+#install.packages("ggQC")
+#install.packages("bbl")
 
 library("ggQC")
 library("tidyverse")

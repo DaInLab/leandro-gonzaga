@@ -1,6 +1,6 @@
 #Exercicio 2
-install.packages("tidyverse")
-install.packages("bbl")
+#install.packages("tidyverse")
+#install.packages("bbl")
 
 library("tidyverse")
 library("bbl")
@@ -39,3 +39,4 @@ ggplot(data = TabelaFrequencias) +
   geom_line(aes(y = Qtde_Familias, x = descritivas_dataset$moda), colour="blue")+
   ggtitle(paste("Moda: ", descritivas_dataset$moda, " filhos por familia")) +
   theme(plot.title = element_text(hjust = 0.5))
+

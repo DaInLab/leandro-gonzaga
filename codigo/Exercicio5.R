@@ -1,6 +1,6 @@
 #Exercicio 2
-install.packages("tidyverse")
-install.packages("bbl")
+#install.packages("tidyverse")
+#install.packages("bbl")
 
 library("tidyverse")
 library(readxl)
